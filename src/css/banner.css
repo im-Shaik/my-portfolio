@@ -1,0 +1,98 @@
+.banner .object img {
+  width: 300px;
+  margin: 0 auto;
+  box-shadow: #0b220d92 -1px 1px 1px 8px;
+  animation: 5s linear infinite border;
+}
+
+.banner .name {
+  position: relative;
+}
+
+.banner .name::after {
+  position: absolute;
+  content: "";
+  background: #0b220d92;
+  top: 0;
+  right: 0;
+  border-radius: 30px;
+  height: 100%;
+  width: 10px;
+  display: block;
+}
+
+@media screen and (max-width: 1023px) {
+  .name {
+    padding: 40px;
+  }
+  .banner .name::after {
+    display: none;
+  }
+}
+@media screen and (max-width: 530px) {
+  .banner .object {
+    position: absolute !important;
+    top: -41px;
+    left: 50%;
+    transform: translate(-50%);
+  }
+
+  .banner .name {
+    position: absolute !important;
+    top: 243px;
+    left: 50%;
+    transform: translate(-50%);
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .position {
+    position: relative;
+  }
+  .banner .social {
+    position: absolute;
+    top: 200px;
+    left: 50%;
+    transform: translate(-50%);
+    display: flex !important;
+    flex-direction: row;
+    gap: 10px;
+  }
+}
+
+@media screen and (max-width: 530px) {
+  .banner {
+    margin: 0;
+  }
+
+  .social {
+    margin-left: 10px;
+  }
+
+  .container > div {
+    padding: unset !important ;
+  }
+}
+
+/* .test {
+  height: 200vh;
+} */
+
+/* banner img keyframe */
+@keyframes border {
+  0% {
+    border-radius: 60% 40% 30% 70% / 60% 40% 30% 70%;
+  }
+
+  25% {
+    border-radius: 30% 60% 70% 40% / 50% 60% 30% 60%;
+  }
+
+  50% {
+    border-radius: 50% 80% 40% 90% / 50% 60% 30% 80%;
+  }
+
+  100% {
+    border-radius: 60% 40% 30% 70% / 60% 40% 30% 70%;
+  }
+}
