@@ -7,7 +7,7 @@ const Banner = () => {
   return (
     <section className="banner h-screen py-20" id="home">
       <div className="container mx-auto md:p-0 lg:px-3 max-w-[1100px]">
-        <div className="relative w-full flex justify-between items-center px-10">
+        <div className="mt-10 relative w-full flex justify-between items-center px-10">
           <div className="flex flex-col gap-3 social md:ml-3 text-xl ">
             <a href="">
               <box-icon
@@ -31,33 +31,39 @@ const Banner = () => {
               ></box-icon>
             </a>
           </div>
-          <div className="w-full text-center md:text-left p-5 md:p-20 name md:w-[50%] ">
-            <div className="p-1 inline-block mr-2 shadow bg-primary md:p-3 text-white">
-              I am -
-            </div>
-            <h1 className="text-base md:text-2xl lg:text-4xl inline-block font-signature select-none">
-              شيق مممذ <span className="text-primary">فيزل</span>
-            </h1>
-            <span className=" text-base md:text-lg lg:text-xl block mt-4 text-secondary underline">
-              Shaik mohamed faizal
-            </span>
-
-            <h2 className=" text-base md:text-lg lg:text-xl">
-              a{" "}
-              <span className="font-bold text-primary">
-                <Typewriter
-                  words={["Freelancer", "Developer"]}
-                  loop={0}
-                  cursor
-                  cursorStyle="|"
-                  cursorColor="#344E41"
-                  typeSpeed={50}
-                  deleteSpeed={40}
-                  delaySpeed={3000}
-                />
+          <form className="w-full text-center md:text-left p-5 md:p-20 name md:w-[50%]">
+            <div>
+              <div className="p-1 inline-block mr-2 shadow bg-primary md:p-3 text-white">
+                I am -
+              </div>
+              <h1 className="text-base md:text-2xl lg:text-4xl inline-block font-signature select-none">
+                شيق مممذ <span className="text-primary">فيزل</span>
+              </h1>
+              <span className=" text-base md:text-lg lg:text-xl block mt-4 text-secondary underline">
+                Shaik mohamed faizal
               </span>
-            </h2>
-          </div>
+
+              <h2 className=" text-base md:text-lg lg:text-xl">
+                a{" "}
+                <span className="font-bold text-primary">
+                  <Typewriter
+                    words={["Freelancer", "Developer"]}
+                    loop={0}
+                    cursor
+                    cursorStyle="|"
+                    cursorColor="#344E41"
+                    typeSpeed={50}
+                    deleteSpeed={40}
+                    delaySpeed={3000}
+                  />
+                </span>
+              </h2>
+              <button className="btn rounded-md flex justify-between gap-2 items-center bg-primary text-white px-3 py-2">
+                Hire me!
+                <i class="uil uil-message"></i>
+              </button>
+            </div>
+          </form>
           <div className="object w-[45%] ">
             <img src={hero} className="shadow-md" alt="hero.jpg" />
           </div>

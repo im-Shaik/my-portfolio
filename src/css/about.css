@@ -1,3 +1,16 @@
-.about {
-  height: 100vh;
+.about-card {
+  display: flex;
+  justify-content: space-between;
+}
+
+.about-card .col-1 {
+  width: 30%;
+  overflow: hidden;
+  box-shadow: #0b220d92 -1px 1px 1px 8px;
+}
+
+.about-card .col-1 img {
+  width: 100%;
+  transform: scale(1.7);
+  background-size: cover;
 }
