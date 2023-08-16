@@ -21,6 +21,22 @@
   display: block;
 }
 
+.banner .btn {
+  display: inline-flex;
+  margin-top: 10px;
+  gap: 10px;
+  align-items: center;
+}
+
+.banner .btn i {
+  transform: rotate(-60deg);
+  transition: all 0.4s;
+}
+
+.banner .btn:hover i {
+  transform: rotate(0deg);
+}
+
 @media screen and (max-width: 1023px) {
   .name {
     padding: 40px;
@@ -74,11 +90,12 @@
   }
 }
 
-/* .test {
-  height: 200vh;
-} */
+@media screen and (max-width: 460px) {
+  .banner .name {
+    padding: 0 !important;
+  }
+}
 
-/* banner img keyframe */
 @keyframes border {
   0% {
     border-radius: 60% 40% 30% 70% / 60% 40% 30% 70%;
