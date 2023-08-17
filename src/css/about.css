@@ -19,9 +19,11 @@
 
 .about-card .col-2 {
   width: 50%;
+  padding: 0 10px;
 }
 
 .about-card .col-2 h1 {
+  display: inline-block;
   position: relative;
 }
 
@@ -30,7 +32,7 @@
   content: "";
   height: 11px;
   width: 80%;
-  left: 0;
+  left: 0%;
   bottom: 10%;
   background-color: #0b220d92;
   transform: rotate(2deg);
@@ -38,4 +40,28 @@
 
 .about-card .col-2 p a {
   color: rgb(52 78 65);
+}
+
+/* media quires */
+@media screen and (max-width: 773px) {
+  .about-card {
+    flex-direction: column;
+    gap: 50px;
+  }
+
+  .about-card .col-2 {
+    text-align: center;
+    width: 100%;
+  }
+  .about-card .col-2 h1 {
+    text-align: center;
+  }
+
+  .about-card .col-2 > div:first-child {
+    text-align: center;
+  }
+
+  .about-card .col-2 {
+    padding: 20px;
+  }
 }

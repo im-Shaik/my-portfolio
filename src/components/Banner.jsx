@@ -9,21 +9,27 @@ const Banner = () => {
       <div className="container mx-auto md:p-0 lg:px-3 max-w-[1100px]">
         <div className="mt-10 relative w-full flex justify-between items-center px-10">
           <div className="flex flex-col gap-3 social md:ml-3 text-xl ">
-            <a href="">
+            <a target="_blank" href="https://github.com/mohamedfaizal813">
               <box-icon
                 type="logo"
                 color="rgb(52 78 65)"
                 name="github"
               ></box-icon>
             </a>
-            <a href="">
+            <a
+              href="https://instagram.com/poda_mairu?utm_source=qr&igshid=MzNlNGNkZWQ4Mg%3D%3D"
+              target="_blank"
+            >
               <box-icon
                 type="logo"
                 color="rgb(52 78 65)"
                 name="instagram-alt"
               ></box-icon>
             </a>
-            <a href="">
+            <a
+              href="https://stackoverflow.com/users/21496084/shaik-mohamed-faizal"
+              target="_blank"
+            >
               <box-icon
                 name="stack-overflow"
                 type="logo"

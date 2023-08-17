@@ -7,7 +7,7 @@ const About = () => {
     <section id="about" className="h-screen py-20">
       <div className="container mx-auto md:p-0 lg:px-3 max-w-[1100px]">
         <div className="mt-5 px-10">
-          <h1 className="sm:text-base md:text-3xl lg:text-4xl text-center m-10 font-bold">
+          <h1 className="text-3xl md:text-4xl text-center m-10 font-bold">
             About me
           </h1>
           <div className="about-card">
@@ -15,12 +15,17 @@ const About = () => {
               <img src={hero} alt="" />
             </div>
             <div className="col-2">
-              <h1 className="text-4xl mb-5">Shaik mohamed faizal</h1>
-              <p className="font-semibold">
+              <div className=" mb-5">
+                <h1 className="text-2xl md:text-3xl lg:text-4xl">
+                  Shaik mohamed faizal
+                </h1>
+              </div>
+              <p className="font-semibold text-base md:text-lg">
                 A{" "}
                 <a
-                  href="https://www.indeed.com/q-Front-end-Developer-jobs.html?cgtk=425a0c3d-a288-4161-805a-fe0d83c03ebd&from=careerguide-autohyperlink-en-US"
-                  className="inline-flex justify-between items-center gap-1 text-cyan-600"
+                  href="https://en.wikipedia.org/wiki/Front-end_web_development"
+                  className="inline-flex justify-between items-center gap-1"
+                  target="_blank"
                 >
                   front-end developer
                   <svg
