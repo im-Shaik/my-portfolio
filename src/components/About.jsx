@@ -16,11 +16,11 @@ const About = () => {
             </div>
             <div className="col-2">
               <div className=" mb-5">
-                <h1 className="text-2xl md:text-3xl lg:text-4xl">
+                <h1 className="font-semibold text-2xl md:text-3xl lg:text-4xl">
                   Shaik mohamed faizal
                 </h1>
               </div>
-              <p className="font-semibold text-base md:text-lg">
+              <p className="font-medium text-base md:text-lg">
                 A{" "}
                 <a
                   href="https://en.wikipedia.org/wiki/Front-end_web_development"
