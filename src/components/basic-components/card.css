@@ -1,0 +1,29 @@
+.card {
+  padding: 20px;
+  /* background-color: brown; */
+  border-radius: 20px;
+}
+
+.card figure {
+  border-radius: 20px;
+  overflow: hidden;
+}
+
+.card figure img {
+  width: 100%;
+  height: 100%;
+}
+
+.card .card-body {
+  margin: 15px;
+}
+
+.card .card-body .card-title {
+}
+
+.card .card-body a {
+  background-color: #344e41;
+  padding: 20px;
+  border-radius: 10px;
+  color: white;
+}

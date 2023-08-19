@@ -1,4 +1,4 @@
-// ObjectArrayContext.js
+// data context!
 import React, { createContext, useContext } from "react";
 
 const DataContext = createContext();
@@ -6,6 +6,7 @@ const DataContext = createContext();
 export const useDataContext = () => useContext(DataContext);
 
 export function DataContextProvider({ children }) {
+  // portfolio
   const data = [
     {
       id: 1,
