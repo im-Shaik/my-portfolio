@@ -10,7 +10,7 @@ const Navbar = () => {
       <div className="container mx-auto md:p-0 lg:px-3 max-w-[1100px]">
         <div className="nav-container">
           <div>
-            <a href="#home" exact className="logo">
+            <a href="#home" className="logo">
               Shaik
             </a>
           </div>
@@ -19,52 +19,52 @@ const Navbar = () => {
             <ul className="nav-list">
               <li className="nav-item text-sm md:text-base">
                 <a href="#home" className="nav-link active">
-                  <i class="uil uil-estate nav-icon"></i>
+                  <i className="uil uil-estate nav-icon"></i>
                   Home
                 </a>
               </li>
 
               <li className="nav-item text-sm md:text-base">
                 <a href="#about" className="nav-link ">
-                  <i class="uil uil-user nav-icon"></i>
+                  <i className="uil uil-user nav-icon"></i>
                   About
                 </a>
               </li>
 
               <li className="nav-item text-sm md:text-base">
                 <a href="#portfolio" className="nav-link ">
-                  <i class="uil uil-gitlab nav-icon"></i>
+                  <i className="uil uil-gitlab nav-icon"></i>
                   Portfolio
                 </a>
               </li>
 
               <li className="nav-item text-sm md:text-base">
                 <a href="#services" className="nav-link ">
-                  <i class="uil uil-arrow nav-icon"></i>
+                  <i className="uil uil-arrow nav-icon"></i>
                   Services
                 </a>
               </li>
 
               <li className="nav-item text-sm md:text-base">
                 <a href="#skill" className="nav-link ">
-                  <i class="uil uil-suitcase nav-icon"></i>
+                  <i className="uil uil-suitcase nav-icon"></i>
                   Skill
                 </a>
               </li>
 
               <li className="nav-item text-sm md:text-base">
                 <a href="#contact" className="nav-link ">
-                  <i class="uil uil-link nav-icon"></i>
+                  <i className="uil uil-link nav-icon"></i>
                   Contact
                 </a>
               </li>
             </ul>
             <a href="#" className="close" onClick={() => showMenu(!toggle)}>
-              <i class="uil uil-multiply nav-link"></i>
+              <i className="uil uil-multiply nav-link"></i>
             </a>
           </div>
           <a href="#" className="app" onClick={() => showMenu(!toggle)}>
-            <i class="uil uil-apps nav-link"></i>
+            <i className="uil uil-apps nav-link"></i>
           </a>
         </div>
       </div>

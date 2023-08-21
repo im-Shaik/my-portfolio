@@ -46,6 +46,9 @@
   }
 }
 @media screen and (max-width: 530px) {
+  .banner .position {
+    position: relative;
+  }
   .banner .object {
     position: absolute !important;
     top: -41px;

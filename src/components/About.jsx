@@ -4,7 +4,7 @@ import hero from "../assets/hero.jpg";
 
 const About = () => {
   return (
-    <section id="about" className="h-screen py-20">
+    <section id="about" className="h-screen my-[20px] py-20 h-full">
       <div className="container mx-auto md:p-0 lg:px-3 max-w-[1100px]">
         <div className="mt-5 px-10">
           <h1 className="text-3xl md:text-4xl text-center m-10 font-bold">
@@ -35,7 +35,7 @@ const About = () => {
                     fill="currentColor"
                     viewBox="0 0 24 24"
                     aria-hidden="true"
-                    class=" css-1jtd2m7 eac13zx0 w-4"
+                    className=" css-1jtd2m7 eac13zx0 w-4"
                   >
                     <path d="M14.504 3a.5.5 0 00-.5.5v1a.5.5 0 00.5.5h3.085l-9.594 9.594a.5.5 0 000 .707l.707.708a.5.5 0 00.707 0l9.594-9.595V9.5a.5.5 0 00.5.5h1a.5.5 0 00.5-.5v-6a.5.5 0 00-.5-.5h-6z"></path>
                     <path d="M5 3.002a2 2 0 00-2 2v13.996a2 2 0 001.996 2.004h14a2 2 0 002-2v-6.5a.5.5 0 00-.5-.5h-1a.5.5 0 00-.5.5v6.5L5 18.998V5.002L11.5 5a.495.495 0 00.496-.498v-1a.5.5 0 00-.5-.5H5z"></path>

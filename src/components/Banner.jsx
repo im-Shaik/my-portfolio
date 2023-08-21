@@ -5,9 +5,9 @@ import "../css/banner.css";
 
 const Banner = () => {
   return (
-    <section className="banner h-screen py-20" id="home">
+    <section className="banner h-screen h-full my-[20px] py-20" id="home">
       <div className="container mx-auto md:p-0 lg:px-3 max-w-[1100px]">
-        <div className="mt-10 relative w-full flex justify-between items-center px-10">
+        <div className="mt-10 position w-full flex justify-between items-center px-10">
           <div className="flex flex-col gap-3 social md:ml-3 text-xl ">
             <a target="_blank" href="https://github.com/mohamedfaizal813">
               <box-icon

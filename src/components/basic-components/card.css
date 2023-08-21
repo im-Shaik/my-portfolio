@@ -16,9 +16,7 @@
 
 .card .card-body {
   margin: 15px;
-}
-
-.card .card-body .card-title {
+  overflow-wrap: break-word;
 }
 
 .card .card-body a {
