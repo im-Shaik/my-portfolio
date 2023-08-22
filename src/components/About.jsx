@@ -4,7 +4,7 @@ import hero from "../assets/hero.jpg";
 
 const About = () => {
   return (
-    <section id="about" className="h-screen my-[20px] py-20 h-full">
+    <section id="about" className=" my-[20px] py-20 ">
       <div className="container mx-auto md:p-0 lg:px-3 max-w-[1100px]">
         <div className="mt-5 px-10">
           <h1 className="text-3xl md:text-4xl text-center m-10 font-bold">
