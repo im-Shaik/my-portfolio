@@ -41,6 +41,7 @@
 @media screen and (max-width: 599px) {
   .card {
     width: 230px;
+    padding: 40px !important;
   }
   figure {
     display: none;

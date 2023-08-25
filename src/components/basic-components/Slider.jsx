@@ -25,11 +25,11 @@ export default function App() {
         modules={[EffectCards]}
         className="mySwiper"
       >
-        {data.map((item) => {
+        {data.map((item, index) => {
           return (
             <SwiperSlide>
               <Card
-                key={item.id}
+                key={index}
                 siteImg={item.siteIMG}
                 title={item.siteName}
                 url={item.siteURL}

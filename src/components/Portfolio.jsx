@@ -13,7 +13,7 @@ const Portfolio = () => {
           <h1 className="text-3xl md:text-4xl text-center mb-5 md:mb-10 font-bold">
             Portfolio
           </h1>
-          <div>
+          <div className="my-[50px] md:my-0">
             <Slider />
           </div>
         </div>
