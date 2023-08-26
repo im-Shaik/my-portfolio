@@ -15,7 +15,8 @@ import "./slider.css";
 import { EffectCards } from "swiper/modules";
 
 export default function App() {
-  const data = useDataContext();
+  const { data } = useDataContext();
+  console.log(data);
 
   return (
     <>

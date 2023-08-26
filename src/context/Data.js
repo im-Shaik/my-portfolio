@@ -1,5 +1,6 @@
 // data context!
 import React, { createContext, useContext } from "react";
+import { useState } from "react";
 
 const DataContext = createContext();
 
@@ -7,7 +8,7 @@ export const useDataContext = () => useContext(DataContext);
 
 export function DataContextProvider({ children }) {
   // portfolio
-  const data = [
+  const [data, setData] = useState([
     {
       id: 1,
       siteIMG:
@@ -43,7 +44,28 @@ export function DataContextProvider({ children }) {
       siteName: "High-School",
       siteURL: "https://mohamedfaizal813.github.io/School-concept/",
     },
-  ];
+  ]);
 
-  return <DataContext.Provider value={data}>{children}</DataContext.Provider>;
+  // services
+  const [service, setService] = useState([
+    {
+      id: 1,
+      serviceIMG: "<box-icon name='code-curly'></box-icon>",
+      title: "Front-End Development",
+    },
+    {
+      id: 2,
+      serviceIMG: `<i className="uil uil-pagelines"></i>`,
+      title: "Design Structure",
+    },
+  ]);
+
+  const contextValue = {
+    data,
+    service,
+  };
+
+  return (
+    <DataContext.Provider value={contextValue}>{children}</DataContext.Provider>
+  );
 }
