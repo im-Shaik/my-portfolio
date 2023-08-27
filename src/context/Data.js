@@ -50,13 +50,18 @@ export function DataContextProvider({ children }) {
   const [service, setService] = useState([
     {
       id: 1,
-      serviceIMG: "<box-icon name='code-curly'></box-icon>",
+      serviceTAG: `<i class="fa-solid fa-terminal"></i>`,
       title: "Front-End Development",
     },
     {
       id: 2,
-      serviceIMG: `<i className="uil uil-pagelines"></i>`,
+      serviceTAG: `<i class="fa-solid fa-pen-nib"></i>`,
       title: "Design Structure",
+    },
+    {
+      id: 3,
+      serviceTAG: `<i class="fa-solid fa-screwdriver-wrench"></i>`,
+      title: "Epson Engineer",
     },
   ]);
 

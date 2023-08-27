@@ -7,15 +7,17 @@ const Service = () => {
 
   return (
     <section className="services  my-[20px] py-20" id="services">
-      <div className="container mx-auto md:p-0 lg:px-3 max-w-[1100px]">
+      <div className="container mx-auto px-3 max-w-[1100px]">
         <h1 className="text-3xl md:text-4xl text-center mb-5 md:mb-10 font-bold">
           Services
         </h1>
-        <div className="boxs flex justify-between items-center w-full">
+        <div className="boxs flex justify-between items-center flex-wrap w-full">
           {service.map((item) => {
-            console.log(item.serviceIMG);
             return (
-              <div className="box p-[20px] rounded-xl relative shadow-lg drop-shadow-xl">
+              <div
+                key={item.id}
+                className="box p-[20px] rounded-xl relative shadow-lg drop-shadow-xl"
+              >
                 <svg
                   className="absolute -z-10 left-0 top-0 h-full w-full"
                   xmlns="http://www.w3.org/2000/svg"
@@ -58,9 +60,10 @@ const Service = () => {
                     </mask>
                   </defs>
                 </svg>
-                <div className="p-[20px] text-center bg-white rounded-xl mb-2">
-                  {item.serviceIMG}
-                </div>
+                <div
+                  className="p-[20px] bg-white text-center text-xl md:text-2xl text-primary rounded-xl mb-2"
+                  dangerouslySetInnerHTML={{ __html: item.serviceTAG }}
+                ></div>
                 <div>
                   <h1 className="text-xl md:text-2xl text-primary font-bold text-center">
                     {item.title}

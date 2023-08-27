@@ -1,0 +1,7 @@
+.marquee > div > div > div > div {
+  margin-right: 50px;
+  padding: 10px;
+  width: 150px;
+  display: flex;
+  align-items: center;
+}
