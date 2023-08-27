@@ -1,5 +1,4 @@
 import React from "react";
-// import Card from "./basic-components/Card";
 import Slider from "./basic-components/Slider";
 
 const Portfolio = () => {

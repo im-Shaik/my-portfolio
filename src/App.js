@@ -5,6 +5,7 @@ import About from "./components/About";
 import Portfolio from "./components/Portfolio";
 import Service from "./components/Service";
 import Skill from "./components/Skill";
+import Contact from "./components/Contact";
 import { DataContextProvider } from "./context/Data";
 
 const App = () => {
@@ -17,6 +18,7 @@ const App = () => {
         <Portfolio />
         <Service />
         <Skill />
+        <Contact />
       </DataContextProvider>
     </>
   );

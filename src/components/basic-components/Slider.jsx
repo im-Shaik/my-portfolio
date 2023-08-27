@@ -16,7 +16,6 @@ import { EffectCards } from "swiper/modules";
 
 export default function App() {
   const { data } = useDataContext();
-  console.log(data);
 
   return (
     <>
@@ -34,6 +33,7 @@ export default function App() {
                 siteImg={item.siteIMG}
                 title={item.siteName}
                 url={item.siteURL}
+                id={item.id}
               />
             </SwiperSlide>
           );

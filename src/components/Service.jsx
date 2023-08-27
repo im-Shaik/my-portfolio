@@ -12,10 +12,10 @@ const Service = () => {
           Services
         </h1>
         <div className="boxs flex justify-between items-center flex-wrap w-full">
-          {service.map((item) => {
+          {service.map((item, index) => {
             return (
               <div
-                key={item.id}
+                key={index}
                 className="box p-[20px] rounded-xl relative shadow-lg drop-shadow-xl"
               >
                 <svg
@@ -31,27 +31,27 @@ const Service = () => {
                     <path
                       d="M606.79 658.31C738.3 650.59 817.85 417.79 1071.06 409.04 1324.26 400.29 1412.83 254.34 1535.32 252.24"
                       stroke="rgba(115, 194, 51, 0.58)"
-                      stroke-width="2"
+                      strokeWidth="2"
                     ></path>
                     <path
                       d="M882.83 627.96C949.16 625.63 920.46 532.31 1125.82 521.02 1331.18 509.73 1472.58 255.88 1611.8 246.62"
                       stroke="rgba(115, 194, 51, 0.58)"
-                      stroke-width="2"
+                      strokeWidth="2"
                     ></path>
                     <path
                       d="M527.6 584.67C709.79 539.04 779.75 46.31 1049.29 44.09 1318.83 41.87 1424.47 305.14 1570.98 312.89"
                       stroke="rgba(115, 194, 51, 0.58)"
-                      stroke-width="2"
+                      strokeWidth="2"
                     ></path>
                     <path
                       d="M265.33 624.94C464.35 612.04 609.81 236.38 961.74 235.84 1313.68 235.3 1478.04 419.08 1658.16 420.64"
                       stroke="rgba(115, 194, 51, 0.58)"
-                      stroke-width="2"
+                      strokeWidth="2"
                     ></path>
                     <path
                       d="M438.84 616.65C585.23 616.58 719.33 561.53 1021.51 558.61 1323.7 555.69 1444.46 301.42 1604.19 295.41"
                       stroke="rgba(115, 194, 51, 0.58)"
-                      stroke-width="2"
+                      strokeWidth="2"
                     ></path>
                   </g>
                   <defs>

@@ -13,7 +13,7 @@ import "../css/skill.css";
 
 const Skill = () => {
   return (
-    <div id="skill" className="skill my-[20px] py-20 ">
+    <section id="skill" className="skill my-[20px] py-20 ">
       <div className="container mx-auto px-3 max-w-[1100px]">
         <h1 className="text-3xl md:text-4xl text-center m-10 font-bold">
           Skill
@@ -47,7 +47,7 @@ const Skill = () => {
           </Marquee>
         </div>
       </div>
-    </div>
+    </section>
   );
 };
 

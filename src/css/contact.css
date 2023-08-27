@@ -1,0 +1,29 @@
+input {
+  background-color: rgb(244, 239, 239);
+  padding: 20px;
+  border: 2px solid #a3b18a;
+  border-radius: 15px;
+  outline: none;
+}
+
+button {
+  background-color: #a3b18a !important;
+  padding: 20px;
+  cursor: pointer;
+  color: white;
+  border-radius: 10px;
+  flex: 1 0 60px;
+}
+
+.c-name {
+  flex: 1 0 140px;
+}
+
+.c-email,
+.c-message {
+  flex: 1 0 190px;
+}
+
+button:hover {
+  background-color: #78806b !important;
+}
