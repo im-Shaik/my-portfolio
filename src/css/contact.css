@@ -6,7 +6,7 @@ input {
   outline: none;
 }
 
-button {
+.btn {
   background-color: #a3b18a !important;
   padding: 20px;
   cursor: pointer;
@@ -24,6 +24,27 @@ button {
   flex: 1 0 190px;
 }
 
-button:hover {
+.btn:hover {
   background-color: #78806b !important;
+}
+
+.toast-message {
+  background: #78806b !important;
+  color: #fff !important;
+  font-size: 20px;
+  padding: 30px 20px;
+  border-top: 3px solid #435527;
+  border-right: 3px solid #435527;
+  border-left: 3px solid #435527;
+}
+
+.toast-error-message {
+  background: #ca4834 !important;
+  width: 400px !important;
+  color: #fff !important;
+  font-size: 20px;
+  padding: 30px 20px;
+  border-top: 3px solid #d94129;
+  border-right: 3px solid #d94129;
+  border-left: 3px solid #d94129;
 }

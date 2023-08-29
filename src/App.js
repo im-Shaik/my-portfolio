@@ -7,6 +7,7 @@ import Service from "./components/Service";
 import Skill from "./components/Skill";
 import Contact from "./components/Contact";
 import { DataContextProvider } from "./context/Data";
+import Mail from "./components/basic-components/Mail";
 
 const App = () => {
   return (
@@ -19,6 +20,7 @@ const App = () => {
         <Service />
         <Skill />
         <Contact />
+        <Mail />
       </DataContextProvider>
     </>
   );
