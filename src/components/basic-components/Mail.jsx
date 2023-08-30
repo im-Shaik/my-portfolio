@@ -1,6 +1,6 @@
 import React from "react";
 
-const Mail = ({ name, email, message }) => {
+const Mail = () => {
   return (
     <section style={{ margin: 0, padding: 0 }}>
       <table
@@ -48,15 +48,6 @@ const Mail = ({ name, email, message }) => {
                   >
                     <tr>
                       <td style={{ padding: "0 0 36px 0", color: "#153643" }}>
-                        <h1
-                          style={{
-                            fontSize: "24px",
-                            margin: "0 0 20px 0",
-                            fontFamily: "Arial, sans-serif",
-                          }}
-                        >
-                          Got a new offer!
-                        </h1>
                         <p
                           style={{
                             margin: "0 0 12px 0",
@@ -65,91 +56,107 @@ const Mail = ({ name, email, message }) => {
                             fontFamily: "Arial, sans-serif",
                           }}
                         >
-                          <table
+                          <div
                             style={{
-                              fontFamily: "arial, sans-serif",
-                              borderCollapse: "collapse",
-                              width: "100%",
+                              border: "1px solid gray",
+                              padding: "20px",
                             }}
                           >
-                            <tr>
-                              <th
-                                style={{
-                                  padding: "18px",
-                                  backgroundColor: "#dddddd",
-                                  border: "1px solid #dddddd",
-                                }}
-                              >
-                                Name
-                              </th>
-                              <td
-                                style={{
-                                  padding: "18px",
-                                  border: "1px solid #dddddd",
-                                }}
-                              >
-                                {name}
-                              </td>
-                            </tr>
-                            <tr>
-                              <th
-                                style={{
-                                  padding: "18px",
-                                  backgroundColor: "#dddddd",
-                                  border: "1px solid #dddddd",
-                                }}
-                              >
-                                Email
-                              </th>
-                              <td
-                                style={{
-                                  padding: "18px",
-                                  border: "1px solid #dddddd",
-                                }}
-                              >
-                                {email}
-                              </td>
-                            </tr>
-                            <tr>
-                              <th
-                                style={{
-                                  padding: "18px",
-                                  backgroundColor: "#dddddd",
-                                  border: "1px solid #dddddd",
-                                }}
-                              >
-                                Phone
-                              </th>
-                              <td
-                                style={{
-                                  padding: "18px",
-                                  border: "1px solid #dddddd",
-                                }}
-                              >
-                                {"phone"}
-                              </td>
-                            </tr>
-                            <tr>
-                              <th
-                                style={{
-                                  padding: "18px",
-                                  backgroundColor: "#dddddd",
-                                  border: "1px solid #dddddd",
-                                }}
-                              >
-                                Message
-                              </th>
-                              <td
-                                style={{
-                                  padding: "18px",
-                                  border: "1px solid #dddddd",
-                                }}
-                              >
-                                {message}
-                              </td>
-                            </tr>
-                          </table>
-                          ;
+                            <h1
+                              style={{
+                                fontSize: "24px",
+                                margin: "0 0 20px 0",
+                                fontFamily: "Arial, sans-serif",
+                              }}
+                            >
+                              Got a new offer!
+                            </h1>
+                            <table
+                              style={{
+                                fontFamily: "arial, sans-serif",
+                                borderCollapse: "collapse",
+                                border: "2px solid gray",
+                                width: "100%",
+                              }}
+                            >
+                              <tr>
+                                <th
+                                  style={{
+                                    padding: "18px",
+                                    backgroundColor: "#dddddd",
+                                    borderBottom: "1px solid white",
+                                  }}
+                                >
+                                  Name
+                                </th>
+                                <td
+                                  style={{
+                                    padding: "18px",
+                                    border: "2px solid #dddddd",
+                                  }}
+                                >
+                                  ${"input.name"}
+                                </td>
+                              </tr>
+                              <tr>
+                                <th
+                                  style={{
+                                    padding: "18px",
+                                    backgroundColor: "#dddddd",
+                                    borderBottom: "2px solid white",
+                                  }}
+                                >
+                                  Email
+                                </th>
+                                <td
+                                  style={{
+                                    padding: "18px",
+                                    border: "1px solid #dddddd",
+                                  }}
+                                >
+                                  ${"input.email"}
+                                </td>
+                              </tr>
+                              <tr>
+                                <th
+                                  style={{
+                                    padding: "18px",
+                                    backgroundColor: "#dddddd",
+                                    borderBottom: "2px solid white",
+                                  }}
+                                >
+                                  Phone
+                                </th>
+                                <td
+                                  style={{
+                                    padding: "18px",
+                                    border: "1px solid #dddddd",
+                                  }}
+                                >
+                                  {"phone"}
+                                </td>
+                              </tr>
+                              <tr>
+                                <th
+                                  style={{
+                                    padding: "18px",
+                                    backgroundColor: "#dddddd",
+                                    borderBottom: "2px solid white",
+                                  }}
+                                >
+                                  Message
+                                </th>
+                                <td
+                                  style={{
+                                    padding: "18px",
+                                    border: "1px solid #dddddd",
+                                  }}
+                                >
+                                  ${"input.message"}
+                                </td>
+                              </tr>
+                            </table>
+                          </div>
                         </p>
                       </td>
                     </tr>

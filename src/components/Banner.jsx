@@ -66,7 +66,7 @@ const Banner = () => {
             </h2>
             <a
               href="#contact"
-              className="btn rounded-md bg-primary text-white px-3 py-2"
+              className="button rounded-md bg-primary text-white px-3 py-2"
             >
               Hire me!
               <i className="uil uil-message"></i>

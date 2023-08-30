@@ -21,19 +21,19 @@
   display: block;
 }
 
-.banner .btn {
+.banner .button {
   display: inline-flex;
   margin-top: 10px;
   gap: 10px;
   align-items: center;
 }
 
-.banner .btn i {
+.banner .button i {
   transform: rotate(-60deg);
   transition: all 0.4s;
 }
 
-.banner .btn:hover i {
+.banner .button:hover i {
   transform: rotate(0deg);
 }
 
