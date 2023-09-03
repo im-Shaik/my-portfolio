@@ -129,9 +129,6 @@ const Contact = () => {
               className="c-phone"
               onChange={handleChange}
               placeholder="Phone"
-              max={10}
-              maxLength={10}
-              pattern="^[0-9]{10}+(->|<-)[0-9]+$"
               required
             />
             <input
