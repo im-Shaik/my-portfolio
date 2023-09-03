@@ -61,7 +61,7 @@ export function DataContextProvider({ children }) {
     {
       id: 3,
       serviceTAG: `<i class="fa-solid fa-screwdriver-wrench"></i>`,
-      title: "Epson Engineer",
+      title: "Research",
     },
   ]);
 

@@ -11,10 +11,20 @@ const Contact = () => {
 
   const handleChange = (e) => {
     const { name, value } = e.target;
-    setInput((prevInput) => ({
-      ...prevInput,
-      [name]: value,
-    }));
+    if (name === "phone") {
+      const inputValue = e.target.value;
+      const sanitizedValue = inputValue.replace(/[^0-9]/g, "").slice(0, 10);
+
+      setInput((prevInput) => ({
+        ...prevInput,
+        [name]: sanitizedValue,
+      }));
+    } else {
+      setInput((prevInput) => ({
+        ...prevInput,
+        [name]: value,
+      }));
+    }
   };
 
   const handleSubmit = (e) => {
@@ -54,7 +64,7 @@ const Contact = () => {
                                                         </tr>
                                                         <tr>
                                                             <th style="padding: 18px; background-color: #dddddd; border-bottom: 2px solid white;">Phone</th>
-                                                            <td style="padding: 18px; border: 1px solid #dddddd;">phone</td>
+                                                            <td style="padding: 18px; border: 1px solid #dddddd;">${input.phone}</td>
                                                         </tr>
                                                         <tr>
                                                             <th style="padding: 18px; background-color: #dddddd; border-bottom: 2px solid white;">Message</th>
@@ -104,32 +114,42 @@ const Contact = () => {
           <div className="input-container flex flex-wrap gap-[8px] justify-center items-center">
             <input
               onChange={handleChange}
+              value={input.name}
               type="text"
               placeholder="Name"
               className="c-name"
               name="name"
+              required
             />
             <input
               onChange={handleChange}
               type="email"
+              value={input.email}
               placeholder="Email"
               className="c-email"
               name="email"
+              required
             />
             <input
-              onChange={handleChange}
               type="number"
-              pattern="[0-9]{5}/^-?\d+\.?\d*$/"
-              placeholder="Phone"
-              className="c-phone"
+              inputMode="numeric"
               name="phone"
-              max="10"
+              value={input.phone}
+              className="c-phone"
+              onChange={handleChange}
+              placeholder="Phone"
+              max={10}
+              maxLength={10}
+              pattern="^[0-9]{10}+(->|<-)[0-9]+$"
+              required
             />
             <input
               onChange={handleChange}
               placeholder="Place Something"
               className="c-message"
+              value={input.message}
               name="message"
+              required
             />
             <button className="btn" type="submit">
               Connect!

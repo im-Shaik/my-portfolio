@@ -16,13 +16,18 @@ input {
 }
 
 .c-name {
-  flex: 1 0 140px;
+  flex: 1 0 350px;
 }
 
-.c-email,
-.c-message,
 .c-phone {
-  flex: 1 0 190px;
+  flex: 1 0 90px;
+}
+
+.c-email {
+  flex: 1 0 350px;
+}
+.c-message {
+  flex: 1 0 300px;
 }
 
 .c-phone {
@@ -58,4 +63,13 @@ input {
   border-top: 3px solid #d94129;
   border-right: 3px solid #d94129;
   border-left: 3px solid #d94129;
+}
+
+@media screen and (max-width: 374px) {
+  .c-name,
+  .c-email,
+  .c-message,
+  .c-phone {
+    flex: 1 0 60px;
+  }
 }

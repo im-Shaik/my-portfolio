@@ -3,6 +3,7 @@ import Marquee from "react-fast-marquee";
 import Bootstrap from "../assets/skill/bootstrap.png";
 import HTML from "../assets/skill/html.png";
 import CSS from "../assets/skill/css.png";
+import Sass from "../assets/skill/sass.png";
 import JS from "../assets/skill/js.png";
 import react from "../assets/skill/react.png";
 import Tailwind from "../assets/skill/tailwind.png";
@@ -25,6 +26,9 @@ const Skill = () => {
             </div>
             <div>
               <img src={CSS} alt="css" />
+            </div>
+            <div>
+              <img src={Sass} alt="sass" />
             </div>
             <div>
               <img src={JS} alt="JS" />

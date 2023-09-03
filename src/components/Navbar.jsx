@@ -4,6 +4,7 @@ import { useState, useEffect } from "react";
 
 const Navbar = () => {
   const [toggle, showMenu] = useState(false);
+  const [activeLink, setActiveLink] = useState("#home");
 
   return (
     <header className="header">
@@ -18,42 +19,78 @@ const Navbar = () => {
           <div className={toggle ? "nav-menus show-menu" : "nav-menus"}>
             <ul className="nav-list">
               <li className="nav-item text-sm md:text-base">
-                <a href="#home" className="nav-link active">
+                <a
+                  href="#home"
+                  onClick={() => setActiveLink("#home")}
+                  className={
+                    activeLink === "#home" ? "nav-link active" : "nav-link"
+                  }
+                >
                   <i className="uil uil-estate nav-icon"></i>
                   Home
                 </a>
               </li>
 
               <li className="nav-item text-sm md:text-base">
-                <a href="#about" className="nav-link ">
+                <a
+                  href="#about"
+                  onClick={() => setActiveLink("#about")}
+                  className={
+                    activeLink === "#about" ? "nav-link active" : "nav-link"
+                  }
+                >
                   <i className="uil uil-user nav-icon"></i>
                   About
                 </a>
               </li>
 
               <li className="nav-item text-sm md:text-base">
-                <a href="#portfolio" className="nav-link ">
+                <a
+                  href="#portfolio"
+                  onClick={() => setActiveLink("#portfolio")}
+                  className={
+                    activeLink === "#portfolio" ? "nav-link active" : "nav-link"
+                  }
+                >
                   <i className="uil uil-gitlab nav-icon"></i>
                   Portfolio
                 </a>
               </li>
 
               <li className="nav-item text-sm md:text-base">
-                <a href="#services" className="nav-link ">
+                <a
+                  href="#services"
+                  onClick={() => setActiveLink("#services")}
+                  className={
+                    activeLink === "#services" ? "nav-link active" : "nav-link"
+                  }
+                >
                   <i className="uil uil-arrow nav-icon"></i>
                   Services
                 </a>
               </li>
 
               <li className="nav-item text-sm md:text-base">
-                <a href="#skill" className="nav-link ">
+                <a
+                  href="#skill"
+                  onClick={() => setActiveLink("#skill")}
+                  className={
+                    activeLink === "#skill" ? "nav-link active" : "nav-link"
+                  }
+                >
                   <i className="uil uil-suitcase nav-icon"></i>
                   Skill
                 </a>
               </li>
 
               <li className="nav-item text-sm md:text-base">
-                <a href="#contact" className="nav-link ">
+                <a
+                  href="#contact"
+                  onClick={() => setActiveLink("#contact")}
+                  className={
+                    activeLink === "#contact" ? "nav-link active" : "nav-link"
+                  }
+                >
                   <i className="uil uil-link nav-icon"></i>
                   Contact
                 </a>
