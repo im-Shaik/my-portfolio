@@ -11,11 +11,20 @@ const Contact = () => {
 
   const handleChange = (e) => {
     const { name, value } = e.target;
+    if (name === "phone") {
+      const inputValue = e.target.value;
+      const sanitizedValue = inputValue.replace(/[^0-9]/g, "").slice(0, 10);
 
-    setInput((prevInput) => ({
-      ...prevInput,
-      [name]: value,
-    }));
+      setInput((prevInput) => ({
+        ...prevInput,
+        [name]: sanitizedValue,
+      }));
+    } else {
+      setInput((prevInput) => ({
+        ...prevInput,
+        [name]: value,
+      }));
+    }
   };
 
   const handleSubmit = (e) => {
