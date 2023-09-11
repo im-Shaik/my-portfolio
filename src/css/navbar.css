@@ -1,11 +1,15 @@
 .header {
   padding: 0.59rem 2rem;
-  background-color: #344e41;
   position: fixed;
   z-index: 100;
   top: 0;
   left: 0;
   width: 100%;
+  background: rgba(255, 255, 255, 0.35);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(9.3px);
+  -webkit-backdrop-filter: blur(9.3px);
 }
 .nav-container {
   display: flex;
@@ -24,11 +28,12 @@
   flex-direction: column;
   align-items: center;
   padding: 0.57rem;
+  color: #ff7598;
 }
 
 .active,
 .nav-link:hover {
-  color: #a3b18a;
+  color: #75d1f0;
 }
 
 .app,
@@ -37,15 +42,21 @@
   display: none;
 }
 
+.app,
+.logo {
+  font-size: 20px !important;
+}
+
 .logo {
   display: inline-block;
   height: 100%;
-  font-size: 24px;
+  font-size: 25px;
+  color: #ff7598;
 }
 
 .app:hover,
 .close:hover {
-  background-color: rgb(101, 115, 101);
+  background-color: rgb(140, 142, 140);
   color: white !important;
   border-radius: 10%;
 }
@@ -67,11 +78,13 @@
     bottom: 0;
     left: 0;
     width: 100%;
-    background-color: #344e41;
     padding: 2rem 1.5rem 4rem;
     border-radius: 1.5rem 1.5rem 0 0;
-    box-shadow: 0px -1px 4px rgba(0, 0, 0, 0.15);
     transition: 0.3s;
+    background: #ffffff;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(9.3px);
+    -webkit-backdrop-filter: blur(9.3px);
   }
 
   .nav-list {

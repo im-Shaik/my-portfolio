@@ -10,11 +10,7 @@ const Banner = () => {
         <div className="mt-10 position w-full flex justify-between items-center px-10">
           <div className="flex flex-col gap-3 social md:ml-3 text-xl ">
             <a target="_blank" href="https://github.com/mohamedfaizal813">
-              <box-icon
-                type="logo"
-                color="rgb(52 78 65)"
-                name="github"
-              ></box-icon>
+              <box-icon type="logo" color="#ff7598" name="github"></box-icon>
             </a>
             <a
               href="https://instagram.com/poda_mairu?utm_source=qr&igshid=MzNlNGNkZWQ4Mg%3D%3D"
@@ -22,7 +18,7 @@ const Banner = () => {
             >
               <box-icon
                 type="logo"
-                color="rgb(52 78 65)"
+                color="#ff7598"
                 name="instagram-alt"
               ></box-icon>
             </a>
@@ -33,7 +29,7 @@ const Banner = () => {
               <box-icon
                 name="stack-overflow"
                 type="logo"
-                color="rgb(52 78 65)"
+                color="#ff7598"
               ></box-icon>
             </a>
           </div>
@@ -73,7 +69,7 @@ const Banner = () => {
             </a>
           </div>
 
-          <div className="object w-[45%] ">
+          <div className="object w-[25%]">
             <img src={hero} className="shadow-md" alt="hero.jpg" />
           </div>
         </div>

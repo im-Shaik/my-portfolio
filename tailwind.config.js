@@ -9,9 +9,12 @@ module.exports = {
     },
     colors: {
       white: "#ffffff",
-      primary: "#344E41",
-      secondary: "#3A5A40",
+      primary: "#ff7598",
+      secondary: "#75d1f0",
     },
   },
-  plugins: [],
+  daisyui: {
+    themes: ["cyberpunk"],
+  },
+  plugins: [require("daisyui")],
 };

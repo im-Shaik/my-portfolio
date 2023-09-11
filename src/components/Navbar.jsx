@@ -3,7 +3,7 @@ import "../css/navbar.css";
 import { useState, useEffect } from "react";
 
 const Navbar = () => {
-  const [toggle, showMenu] = useState(false);
+  const [toggle, showMenu] = useState();
   const [activeLink, setActiveLink] = useState("#home");
 
   return (
