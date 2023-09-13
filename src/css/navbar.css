@@ -6,7 +6,6 @@
   left: 0;
   width: 100%;
   background: rgba(255, 255, 255, 0.35);
-  border-radius: 16px;
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
   backdrop-filter: blur(9.3px);
   -webkit-backdrop-filter: blur(9.3px);
@@ -44,13 +43,13 @@
 
 .app,
 .logo {
-  font-size: 20px !important;
+  font-size: 25px !important;
 }
 
 .logo {
   display: inline-block;
+  font-size: 25px !important;
   height: 100%;
-  font-size: 25px;
   color: #ff7598;
 }
 
@@ -65,7 +64,8 @@
   .header {
     padding: 0.59rem 2rem;
     top: initial;
-    bottom: 0;
+    bottom: 16px;
+    border-radius: 3.5rem;
   }
   .app,
   .close,
@@ -75,7 +75,7 @@
 
   .nav-menus {
     position: fixed;
-    bottom: 0;
+    bottom: -16px;
     left: 0;
     width: 100%;
     padding: 2rem 1.5rem 4rem;

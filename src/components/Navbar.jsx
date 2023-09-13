@@ -3,7 +3,7 @@ import "../css/navbar.css";
 import { useState, useEffect } from "react";
 
 const Navbar = () => {
-  const [toggle, showMenu] = useState();
+  const [toggle, showMenu] = useState(false);
   const [activeLink, setActiveLink] = useState("#home");
 
   return (
@@ -110,70 +110,3 @@ const Navbar = () => {
 };
 
 export default Navbar;
-
-/* 
-
-const [scrolled, setScrolled] = useState(false);
-  const [mobile, setMobile] = useState(false);
-
-  const handleScroll = () => {
-    const threshold = 100;
-
-    if (window.scrollY > threshold) {
-      setScrolled(true);
-    } else {
-      setScrolled(false);
-    }
-  };
-
-  useEffect(() => {
-    window.addEventListener("scroll", handleScroll);
-
-    return () => {
-      window.removeEventListener("scroll", handleScroll);
-    };
-  }, []);
-
-  return (
-    <>
-      <header className={`w-full bg-primary py-5 ${scrolled ? "active" : ""}`}>
-        <div className="container mx-auto px-3 max-w-[1100px]">
-          <div className="flex justify-between items-center">
-            <div>
-              <h1 className="text-2xl font-signature cursor-pointer select-none text-white">
-                شيق مممذ فيزل
-              </h1>
-            </div>
-            <div className="nav-links">
-              <ul
-                className={mobile ? "nav-links-mobile" : "links"}
-                onClick={() => setMobile(false)}
-              >
-                <li>
-                  <Link To="#">Home</Link>
-                </li>
-                <li>
-                  <Link To="#">Portfolio</Link>
-                </li>
-                <li>
-                  <Link To="#">Contact</Link>
-                </li>
-              </ul>
-              <button
-                className="toggle block md:hidden"
-                onClick={() => setMobile(!mobile)}
-              >
-                {mobile ? (
-                  <PiXBold color="white" fontSize={"24px"} />
-                ) : (
-                  <PiHamburgerDuotone color="white" fontSize={"24px"} />
-                )}
-              </button>
-            </div>
-          </div>
-        </div>
-      </header>
-    </>
-  );
-
-*/

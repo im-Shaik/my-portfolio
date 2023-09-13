@@ -1,22 +1,22 @@
-.banner .object:hover img {
-  filter: none;
-}
-
 .banner .object {
   overflow: hidden;
   box-shadow: #ff7598 -1px 1px 1px 8px;
   animation: 5s linear infinite border;
+  transition: all 0.6;
 }
 
 .banner .object img {
   width: 100%;
   height: 100%;
   margin: 0 auto;
-  transition: all 0.6;
   scale: 1.7;
   filter: contrast(10);
   background-position: center;
   background-repeat: no-repeat;
+}
+
+.banner .object:hover img {
+  filter: none;
 }
 
 .banner .name {
@@ -59,6 +59,13 @@
     display: none;
   }
 }
+
+@media screen and (max-width: 767px) {
+  .banner .object {
+    width: 35% !important;
+  }
+}
+
 @media screen and (max-width: 530px) {
   .banner .position {
     position: relative;
@@ -78,6 +85,20 @@
   }
 }
 
+@media screen and (max-width: 530px) {
+  .banner {
+    margin: 0;
+  }
+
+  .social {
+    margin-left: 10px;
+  }
+
+  .container > div {
+    padding: unset !important ;
+  }
+}
+
 @media screen and (max-width: 375px) {
   .position {
     position: relative;
@@ -91,19 +112,9 @@
     flex-direction: row;
     gap: 10px;
   }
-}
 
-@media screen and (max-width: 530px) {
-  .banner {
-    margin: 0;
-  }
-
-  .social {
-    margin-left: 10px;
-  }
-
-  .container > div {
-    padding: unset !important ;
+  .banner .object {
+    width: 46% !important;
   }
 }
 
