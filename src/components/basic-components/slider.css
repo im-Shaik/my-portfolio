@@ -8,7 +8,7 @@
   align-items: center;
   justify-content: center;
   border-radius: 18px;
-  background-color: #344e41;
+  background-color: #ff7598 !important;
 }
 
 @media screen and (max-width: 598px) {

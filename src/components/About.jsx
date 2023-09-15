@@ -7,7 +7,7 @@ const About = () => {
     <section id="about" className=" my-[20px] py-20 ">
       <div className="container mx-auto md:p-0 lg:px-3 max-w-[1100px]">
         <div className="mt-5 px-10">
-          <h1 className="text-3xl md:text-4xl text-center m-10 font-bold">
+          <h1 className="text-3xl text-secondary md:text-4xl text-center m-10 font-bold">
             About me
           </h1>
           <div className="about-card">
@@ -16,7 +16,7 @@ const About = () => {
             </div>
             <div className="col-2">
               <div className=" mb-5">
-                <h1 className="font-semibold text-2xl md:text-3xl lg:text-4xl">
+                <h1 className="font-semibold text-primary text-2xl md:text-3xl lg:text-4xl">
                   Shaik mohamed faizal
                 </h1>
               </div>

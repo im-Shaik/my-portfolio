@@ -1,6 +1,5 @@
 import React, { useState } from "react";
 import "../css/contact.css";
-import Mail from "./basic-components/Mail";
 
 // toastify
 import { ToastContainer, toast } from "react-toastify";
@@ -107,7 +106,7 @@ const Contact = () => {
   return (
     <section id="contact" className="contact my-[20px] py-20">
       <div className="container mx-auto px-3 max-w-[1100px]">
-        <h1 className="text-3xl md:text-4xl text-center m-10 font-bold">
+        <h1 className="text-secondary text-3xl md:text-4xl text-center m-10 font-bold">
           Contact
         </h1>
         <form onSubmit={handleSubmit}>
@@ -148,7 +147,7 @@ const Contact = () => {
               name="message"
               required
             />
-            <button className="btn" type="submit">
+            <button className="c-btn" type="submit">
               Connect!
             </button>
           </div>

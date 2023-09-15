@@ -3,7 +3,7 @@ import "../basic-components/card.css";
 
 const Card = ({ id, title, url, siteImg }) => {
   return (
-    <div key={id} className="card w-[350px] shadow-xl">
+    <div key={id} className="card">
       <figure>
         <img src={siteImg} alt="img" />
       </figure>

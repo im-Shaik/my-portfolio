@@ -8,7 +8,8 @@
 .about-card .col-1 {
   width: 30%;
   overflow: hidden;
-  box-shadow: #0b220d92 -1px 1px 1px 8px;
+  border-radius: 10%;
+  box-shadow: #ff7598 -1px 1px 1px 8px;
 }
 
 .about-card .col-1 img {
@@ -34,12 +35,18 @@
   width: 80%;
   left: 0%;
   bottom: 10%;
-  background-color: #0b220d92;
+  z-index: -1;
+  background-color: #7dd3e2;
   transform: rotate(2deg);
 }
 
+.about-card .col-2 p {
+  text-align: justify;
+  color: rgb(70, 70, 70);
+}
+
 .about-card .col-2 p a {
-  color: rgb(52 78 65);
+  color: #699ba3;
 }
 
 /* media quires */

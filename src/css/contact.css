@@ -1,17 +1,17 @@
 input {
   background-color: rgb(244, 239, 239);
   padding: 20px;
-  border: 2px solid #a3b18a;
+  border: 2px solid #ff7598;
   border-radius: 15px;
   outline: none;
 }
 
-.btn {
-  background-color: #a3b18a !important;
+.c-btn {
+  background-color: #ff7598 !important;
   padding: 20px;
   cursor: pointer;
   color: white;
-  border-radius: 10px;
+  border-radius: 15px;
   flex: 1 0 60px;
 }
 
@@ -40,18 +40,15 @@ input {
   margin: 0;
 }
 
-.btn:hover {
-  background-color: #78806b !important;
+.c-btn:hover {
+  background-color: #874052 !important;
 }
 
 .toast-message {
-  background: #78806b !important;
+  background: #ff7598 !important;
   color: #fff !important;
   font-size: 20px;
   padding: 30px 20px;
-  border-top: 3px solid #435527;
-  border-right: 3px solid #435527;
-  border-left: 3px solid #435527;
 }
 
 .toast-error-message {
@@ -60,9 +57,6 @@ input {
   color: #fff !important;
   font-size: 20px;
   padding: 30px 20px;
-  border-top: 3px solid #d94129;
-  border-right: 3px solid #d94129;
-  border-left: 3px solid #d94129;
 }
 
 @media screen and (max-width: 374px) {

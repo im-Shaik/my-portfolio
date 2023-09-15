@@ -8,7 +8,7 @@ const Service = () => {
   return (
     <section className="services  my-[20px] py-20" id="services">
       <div className="container mx-auto px-3 max-w-[1100px]">
-        <h1 className="text-3xl md:text-4xl text-center mb-5 md:mb-10 font-bold">
+        <h1 className="text-secondary text-3xl md:text-4xl text-center mb-5 md:mb-10 font-bold">
           Services
         </h1>
         <div className="boxs flex justify-between items-center flex-wrap w-full">

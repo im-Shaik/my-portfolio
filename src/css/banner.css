@@ -10,13 +10,8 @@
   height: 100%;
   margin: 0 auto;
   scale: 1.7;
-  filter: contrast(10);
   background-position: center;
   background-repeat: no-repeat;
-}
-
-.banner .object:hover img {
-  filter: none;
 }
 
 .banner .name {
