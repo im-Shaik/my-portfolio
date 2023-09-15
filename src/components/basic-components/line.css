@@ -1,0 +1,31 @@
+.line {
+  height: 8px;
+  width: 100%;
+  background-image: linear-gradient(
+    90deg,
+    hsl(309deg 97% 28%) 0%,
+    hsl(326deg 100% 37%) 0%,
+    hsl(346deg 78% 54%) 2%,
+    hsl(9deg 96% 62%) 6%,
+    hsl(28deg 100% 57%) 11%,
+    hsl(44deg 100% 50%) 16%,
+    hsl(58deg 84% 48%) 22%,
+    hsl(77deg 67% 55%) 28%,
+    hsl(105deg 56% 60%) 34%,
+    hsl(142deg 54% 55%) 41%,
+    hsl(164deg 73% 43%) 47%,
+    hsl(175deg 100% 35%) 54%,
+    hsl(183deg 100% 35%) 60%,
+    hsl(189deg 100% 38%) 66%,
+    hsl(198deg 63% 51%) 72%,
+    hsl(211deg 57% 61%) 78%,
+    hsl(234deg 42% 67%) 83%,
+    hsl(273deg 32% 64%) 87%,
+    hsl(299deg 20% 53%) 91%,
+    hsl(317deg 23% 44%) 95%,
+    hsl(329deg 29% 34%) 97%,
+    hsl(338deg 35% 25%) 99%,
+    hsl(346deg 46% 16%) 100%,
+    hsl(0deg 100% 7%) 100%
+  );
+}

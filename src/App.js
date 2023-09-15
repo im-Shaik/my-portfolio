@@ -6,20 +6,40 @@ import Portfolio from "./components/Portfolio";
 import Service from "./components/Service";
 import Skill from "./components/Skill";
 import Contact from "./components/Contact";
+import Line from "./components/basic-components/Line";
 import { DataContextProvider } from "./context/Data";
+import { useEffect, useState } from "react";
+import Loader from "./components/basic-components/Loader";
 
 const App = () => {
+  const [loading, setLoading] = useState(false);
+
+  useEffect(() => {
+    setLoading(true);
+    setTimeout(() => {
+      setLoading(false);
+    }, 4000);
+  }, []);
+
   return (
     <>
-      <DataContextProvider>
-        <Navbar />
-        <Banner />
-        <About />
-        <Portfolio />
-        <Service />
-        <Skill />
-        <Contact />
-      </DataContextProvider>
+      {loading ? (
+        <div className="h-screen w-screen flex items-center justify-center">
+          <Loader />
+        </div>
+      ) : (
+        <DataContextProvider>
+          <Line />
+          <Navbar />
+          <Banner />
+          <About />
+          <Portfolio />
+          <Service />
+          <Skill />
+          <Contact />
+          <Line />
+        </DataContextProvider>
+      )}
     </>
   );
 };

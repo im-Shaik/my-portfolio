@@ -12,7 +12,7 @@ const Navbar = () => {
         <div className="nav-container">
           <div>
             <a href="#home" className="logo">
-              Shaik
+              Shaik.
             </a>
           </div>
 
