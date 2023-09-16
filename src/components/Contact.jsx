@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import "../css/contact.css";
 
 // toastify
@@ -7,6 +7,20 @@ import "react-toastify/dist/ReactToastify.css";
 
 const Contact = () => {
   const [input, setInput] = useState({});
+  const [disabled, setDisabled] = useState();
+
+  useEffect(() => {
+    if (
+      input.name === "" ||
+      input.email === "" ||
+      input.phone === "" ||
+      input.message === ""
+    ) {
+      setDisabled(true);
+    } else {
+      setDisabled(false);
+    }
+  }, [input]);
 
   const handleChange = (e) => {
     const { name, value } = e.target;
@@ -147,7 +161,7 @@ const Contact = () => {
               name="message"
               required
             />
-            <button className="c-btn" type="submit">
+            <button className="c-btn" type="submit" disabled={disabled}>
               Connect!
             </button>
           </div>

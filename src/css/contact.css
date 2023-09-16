@@ -15,6 +15,14 @@ input {
   flex: 1 0 60px;
 }
 
+.c-btn:disabled {
+  background-color: rgb(154, 67, 67) !important ;
+}
+
+.c-btn:disabled:hover {
+  background-color: rgb(154, 67, 67) !important;
+  cursor: not-allowed !important;
+}
 .c-name {
   flex: 1 0 350px;
 }
