@@ -6,7 +6,12 @@ import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 
 const Contact = () => {
-  const [input, setInput] = useState({});
+  const [input, setInput] = useState({
+    name: "",
+    email: "",
+    phone: "",
+    message: "",
+  });
   const [disabled, setDisabled] = useState();
 
   useEffect(() => {

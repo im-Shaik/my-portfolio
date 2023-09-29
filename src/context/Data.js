@@ -1,6 +1,7 @@
 // data context!
 import React, { createContext, useContext } from "react";
 import { useState } from "react";
+import jsTradersPune from "../assets/portfolio/daigram 5.jpg";
 
 const DataContext = createContext();
 
@@ -43,6 +44,12 @@ export function DataContextProvider({ children }) {
         "https://i.pinimg.com/236x/e3/25/71/e325716a490f2ec633e426740c6c5465.jpg",
       siteName: "High-School",
       siteURL: "https://mohamedfaizal813.github.io/School-concept/",
+    },
+    {
+      id: 6,
+      siteIMG: "https://jstraderspune.com/Images/home-images/c-3.jpg",
+      siteName: "JS Traders Pune",
+      siteURL: "https://jstraderspune.com/",
     },
   ]);
 

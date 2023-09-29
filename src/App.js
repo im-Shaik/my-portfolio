@@ -12,10 +12,9 @@ import { useEffect, useState } from "react";
 import Loader from "./components/basic-components/Loader";
 
 const App = () => {
-  const [loading, setLoading] = useState(false);
+  const [loading, setLoading] = useState(true);
 
   useEffect(() => {
-    setLoading(true);
     setTimeout(() => {
       setLoading(false);
     }, 4000);

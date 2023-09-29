@@ -8,7 +8,6 @@
 
 .card figure {
   height: 200px;
-  margin-top: 18px;
   border-radius: 20px;
   overflow: hidden;
 }
@@ -20,7 +19,6 @@
 }
 
 .card .card-body {
-  margin-top: 10px;
   overflow-wrap: break-word;
   padding: 10px !important;
 }
@@ -42,12 +40,10 @@
 }
 
 @media screen and (max-width: 599px) {
-  /* .card {
-    width: 230px;
-  } */
-  figure {
-    /* display: none !important; */
+  .card figure {
+    height: 150px !important;
   }
+
   .card .card-body a {
     padding: 6px 10px;
   }
