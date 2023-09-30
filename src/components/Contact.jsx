@@ -120,10 +120,13 @@ const Contact = () => {
         }
       });
     }
+    setInput((prev) => {
+      return { ...prev, [name]: "" };
+    });
   };
 
   return (
-    <section id="contact" className="contact my-[20px] py-20">
+    <section id="contact" className="contact mt-[20px] mb-[100px] py-20">
       <div className="container mx-auto px-3 max-w-[1100px]">
         <h1 className="text-secondary text-3xl md:text-4xl text-center m-10 font-bold">
           Contact

@@ -67,6 +67,11 @@ input {
   padding: 30px 20px;
 }
 
+@media screen and (min-width: 768px) {
+  #contact {
+    margin-bottom: 180px !important;
+  }
+}
 @media screen and (max-width: 374px) {
   .c-name,
   .c-email,
