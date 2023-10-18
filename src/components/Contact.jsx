@@ -13,6 +13,8 @@ const Contact = () => {
     message: "",
   });
   const [disabled, setDisabled] = useState();
+  const [emailSent, setEmailSent] = useState(false);
+  const [loading, setLoading] = useState(false);
 
   useEffect(() => {
     if (
@@ -26,6 +28,15 @@ const Contact = () => {
       setDisabled(false);
     }
   }, [input]);
+
+  const resetInput = () => {
+    setInput({
+      name: "",
+      email: "",
+      phone: "",
+      message: "",
+    });
+  };
 
   const handleChange = (e) => {
     const { name, value } = e.target;
@@ -45,15 +56,49 @@ const Contact = () => {
     }
   };
 
-  const handleSubmit = (e) => {
+  const handleSendEmail = async (e) => {
     e.preventDefault();
-    if (window.Email) {
-      window.Email.send({
-        SecureToken: "df754c8d-d56e-48e8-a187-90a10bb00230",
-        To: "mohamedfaizal813@gmail.com",
-        From: "mohamedfaizal8131@gmail.com",
-        Subject: `Message From ${input.name}`,
-        Body: `<section style="margin: 0; padding: 0;">
+    setLoading(true);
+
+    try {
+      const message = await sendEmail(input);
+
+      if (message === "OK") {
+        toast("Email sent successfully", {
+          position: toast.POSITION.TOP_CENTER,
+          className: "toast-message",
+        });
+        setEmailSent(true);
+        resetInput();
+      } else {
+        toast("Something went wrong in my server", {
+          position: toast.POSITION.TOP_CENTER,
+          className: "toast-error-message",
+        });
+      }
+    } catch (error) {
+      console.error(error);
+      toast("Error sending email", {
+        position: toast.POSITION.TOP_CENTER,
+        className: "toast-error-message",
+      });
+    } finally {
+      setLoading(false);
+      setTimeout(() => {
+        setEmailSent(false);
+      }, 2500);
+    }
+  };
+
+  const sendEmail = (input) => {
+    return new Promise((resolve, reject) => {
+      if (window.Email) {
+        window.Email.send({
+          SecureToken: "df754c8d-d56e-48e8-a187-90a10bb00230",
+          To: "mohamedfaizal813@gmail.com",
+          From: "mohamedfaizal8131@gmail.com",
+          Subject: `Message From ${input.name}`,
+          Body: `<section style="margin: 0; padding: 0;">
         <table role="presentation" style="width: 100%; border-collapse: collapse; border: 0; border-spacing: 0; background: #ffffff;">
             <tr>
                 <td align="center" style="padding: 0;">
@@ -102,26 +147,12 @@ const Contact = () => {
         </table>
     </section>
     `,
-      }).then((message) => {
-        if (message === "OK") {
-          toast("Successfully send", {
-            position: toast.POSITION.TOP_CENTER,
-            className: "toast-message",
-          });
-        }
-        if (
-          message ===
-          "Mailbox name not allowed. The server response was: Envelope FROM 'mohamedfaizal@gmail.com' email address not allowed."
-        ) {
-          toast("Something went wrong in my server", {
-            position: toast.POSITION.TOP_CENTER,
-            className: "toast-error-message",
-          });
-        }
-      });
-    }
-    setInput((prev) => {
-      return { ...prev, [name]: "" };
+        }).then((message) => {
+          resolve(message);
+        });
+      } else {
+        reject("window.Email is not available");
+      }
     });
   };
 
@@ -131,7 +162,7 @@ const Contact = () => {
         <h1 className="text-secondary text-3xl md:text-4xl text-center m-10 font-bold">
           Contact
         </h1>
-        <form onSubmit={handleSubmit}>
+        <form onSubmit={handleSendEmail}>
           <div className="input-container flex flex-wrap gap-[8px] justify-center items-center">
             <input
               onChange={handleChange}
@@ -170,7 +201,7 @@ const Contact = () => {
               required
             />
             <button className="c-btn" type="submit" disabled={disabled}>
-              Connect!
+              {loading ? "Sending..." : emailSent ? "Sended." : "Lets talk!"}
             </button>
           </div>
         </form>

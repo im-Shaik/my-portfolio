@@ -1,0 +1,26 @@
+.scroll-Top {
+  padding: 3px;
+  border-radius: 8px;
+  position: fixed;
+  background-color: #ff8092;
+  color: #9fdcc2;
+  bottom: 40px;
+  right: 40px;
+  opacity: 0;
+  transition: 0.5s;
+}
+
+.scroll-Top:hover {
+  background: #a64251;
+}
+
+.scroll-Top.visible {
+  opacity: 1;
+}
+
+@media screen and (max-width: 768px) {
+  .scroll-Top {
+    bottom: 100px;
+    right: 35px;
+  }
+}

@@ -10,6 +10,7 @@ import Line from "./components/basic-components/Line";
 import { DataContextProvider } from "./context/Data";
 import { useEffect, useState } from "react";
 import Loader from "./components/basic-components/Loader";
+import ScrollToTop from "./components/basic-components/ScrollToTop";
 
 const App = () => {
   const [loading, setLoading] = useState(true);
@@ -36,6 +37,7 @@ const App = () => {
           <Service />
           <Skill />
           <Contact />
+          <ScrollToTop />
           <Line />
         </DataContextProvider>
       )}

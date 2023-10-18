@@ -1,15 +1,18 @@
 .card {
   width: 100%;
   height: 100%;
+  overflow: hidden;
   background-color: #ff7598 !important;
   padding: 10px;
   color: white;
+  position: relative;
+  transition: all 0.5s;
 }
 
 .card figure {
-  height: 200px;
-  border-radius: 20px;
-  overflow: hidden;
+  height: 100%;
+  width: 100%;
+  transition: all 0.5s;
 }
 
 .card figure img {
@@ -19,8 +22,20 @@
 }
 
 .card .card-body {
+  transition: all 0.5s;
+  transform: translateX(-400px);
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  left: 0;
+  top: 0;
+  background-color: #ff7598;
   overflow-wrap: break-word;
-  padding: 10px !important;
+  padding: 50px !important;
+}
+
+.card:hover .card-body {
+  transform: translateX(0);
 }
 
 .card .card-body p {
@@ -39,12 +54,8 @@
   background-color: #656565;
 }
 
-@media screen and (max-width: 599px) {
-  .card figure {
-    height: 150px !important;
-  }
-
-  .card .card-body a {
-    padding: 6px 10px;
+@media screen and (max-width: 425px) {
+  .card .card-body {
+    padding: 20px !important;
   }
 }

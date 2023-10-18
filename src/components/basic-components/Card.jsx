@@ -1,5 +1,6 @@
 import React from "react";
 import "../basic-components/card.css";
+import img from "../../assets/reshot-illustration-office-work-WL7AHF5MXB.png";
 
 const Card = ({ id, title, url, siteImg }) => {
   return (
