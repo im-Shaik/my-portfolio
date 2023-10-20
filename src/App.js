@@ -11,6 +11,7 @@ import { DataContextProvider } from "./context/Data";
 import { useEffect, useState } from "react";
 import Loader from "./components/basic-components/Loader";
 import ScrollToTop from "./components/basic-components/ScrollToTop";
+import VisitIP from "./components/basic-components/VisitIP";
 
 const App = () => {
   const [loading, setLoading] = useState(true);
@@ -38,6 +39,7 @@ const App = () => {
           <Skill />
           <Contact />
           <ScrollToTop />
+          <VisitIP />
           <Line />
         </DataContextProvider>
       )}
