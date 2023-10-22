@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/my-portfolio/static/css/main.5b3b4c1a.css",
-    "main.js": "/my-portfolio/static/js/main.a93000f7.js",
+    "main.css": "/my-portfolio/static/css/main.d51d5dba.css",
+    "main.js": "/my-portfolio/static/js/main.5185d368.js",
     "static/media/reshot-illustration-office-work-WL7AHF5MXB.png": "/my-portfolio/static/media/reshot-illustration-office-work-WL7AHF5MXB.a905f79b0656bb5f2bac.png",
     "static/media/react.png": "/my-portfolio/static/media/react.becbab0ab5d2271d2831.png",
     "static/media/tailwind.png": "/my-portfolio/static/media/tailwind.ddb0d6567c9af39395e0.png",
@@ -15,11 +15,11 @@
     "static/media/js.png": "/my-portfolio/static/media/js.3cacb63905f322fb3541.png",
     "static/media/sass.png": "/my-portfolio/static/media/sass.051888ab516950ed48cb.png",
     "index.html": "/my-portfolio/index.html",
-    "main.5b3b4c1a.css.map": "/my-portfolio/static/css/main.5b3b4c1a.css.map",
-    "main.a93000f7.js.map": "/my-portfolio/static/js/main.a93000f7.js.map"
+    "main.d51d5dba.css.map": "/my-portfolio/static/css/main.d51d5dba.css.map",
+    "main.5185d368.js.map": "/my-portfolio/static/js/main.5185d368.js.map"
   },
   "entrypoints": [
-    "static/css/main.5b3b4c1a.css",
-    "static/js/main.a93000f7.js"
+    "static/css/main.d51d5dba.css",
+    "static/js/main.5185d368.js"
   ]
 }
