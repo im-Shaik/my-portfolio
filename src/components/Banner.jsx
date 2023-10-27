@@ -35,19 +35,19 @@ const Banner = () => {
           </div>
 
           <div className="w-full text-center md:text-left p-5 md:p-20 name md:w-[50%]">
-            <div className="p-1 inline-block mr-2 shadow bg-primary md:p-3 text-white">
+            <div className="p-1 inline-block mr-2 shadow  md:p-3 name-span">
               I am -
             </div>
             <h1 className="text-base md:text-2xl lg:text-4xl inline-block font-signature select-none">
-              شيق مممذ <span className="text-primary">فيزل</span>
+              شيق مممذ <span className="name-arabic">فيزل</span>
             </h1>
-            <span className=" text-base md:text-lg lg:text-xl block mt-4 text-secondary underline">
+            <span className=" text-base md:text-lg lg:text-xl block mt-4 name-full underline">
               Shaik mohamed faizal
             </span>
 
             <h2 className=" text-base md:text-lg lg:text-xl">
               a{" "}
-              <span className="font-bold text-primary">
+              <span className="font-bold type-text">
                 <Typewriter
                   words={["Freelancer", "Developer"]}
                   loop={0}
@@ -62,7 +62,7 @@ const Banner = () => {
             </h2>
             <a
               href="#contact"
-              className="button rounded-md bg-primary text-white px-3 py-2"
+              className="button rounded-md px-3 py-2"
             >
               Hire me!
               <i className="uil uil-message"></i>

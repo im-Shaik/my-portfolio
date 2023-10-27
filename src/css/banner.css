@@ -1,6 +1,6 @@
 .banner .object {
   overflow: hidden;
-  box-shadow: #ff7598 -1px 1px 1px 8px;
+  box-shadow: var(--main-color) -1px 1px 1px 8px;
   animation: 5s linear infinite border;
   transition: all 0.6;
 }
@@ -22,7 +22,6 @@
 .banner .name::after {
   position: absolute;
   content: "";
-  /* background: #292929; */
   top: 0;
   right: 0;
   border-radius: 30px;
@@ -31,11 +30,30 @@
   display: block;
 }
 
+.banner .name-span {
+  background-color: var(--main-color);
+  color: var(--text-color);
+}
+
+.banner .name-arabic {
+  color: var(--main-color);
+}
+
+.banner .name-full {
+  color: var(--second-color);
+}
+
+.banner .type-text {
+  color: var(--main-color);
+}
+
 .banner .button {
   display: inline-flex;
   margin-top: 10px;
   gap: 10px;
   align-items: center;
+  background-color: var(--main-color);
+  color: var(--text-color);
 }
 
 .banner .button i {
