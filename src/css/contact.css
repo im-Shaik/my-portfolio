@@ -1,13 +1,17 @@
+.title-contact {
+  color: var(--second-color);
+}
+
 input {
-  background-color: rgb(244, 239, 239);
+  background-color: var(--text-color);
   padding: 20px;
-  border: 2px solid #ff7598;
+  border: 2px solid var(--main-color);
   border-radius: 15px;
   outline: none;
 }
 
 .c-btn {
-  background-color: #ff7598 !important;
+  background-color: var(--main-color) !important;
   padding: 20px;
   cursor: pointer;
   color: white;
@@ -53,8 +57,8 @@ input {
 }
 
 .toast-message {
-  background: #ff7598 !important;
-  color: #fff !important;
+  background: var(--main-color) !important;
+  color: var(--text-color) !important;
   font-size: 20px;
   padding: 30px 20px;
 }

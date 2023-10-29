@@ -8,7 +8,7 @@ const Service = () => {
   return (
     <section className="services  my-[20px] py-20" id="services">
       <div className="container mx-auto px-3 max-w-[1100px]">
-        <h1 className="text-secondary text-3xl md:text-4xl text-center mb-5 md:mb-10 font-bold">
+        <h1 className="title-service text-3xl md:text-4xl text-center mb-5 md:mb-10 font-bold">
           Services
         </h1>
         <div className="boxs flex justify-between items-center flex-wrap w-full">
@@ -61,11 +61,11 @@ const Service = () => {
                   </defs>
                 </svg>
                 <div
-                  className="p-[20px] bg-white text-center text-xl md:text-2xl text-primary rounded-xl mb-2"
+                  className="service-icon p-[20px] text-center text-xl md:text-2xl rounded-xl mb-2"
                   dangerouslySetInnerHTML={{ __html: item.serviceTAG }}
                 ></div>
                 <div>
-                  <h1 className="text-xl md:text-2xl text-primary font-bold text-center">
+                  <h1 className="text-xl icon-title md:text-2xl font-bold text-center">
                     {item.title}
                   </h1>
                 </div>

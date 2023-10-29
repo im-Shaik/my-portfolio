@@ -1,3 +1,12 @@
+.services .title-service {
+  color: var(--second-color);
+}
+
+.services .service-icon {
+  color: var(--main-color);
+  background-color: var(--text-color);
+}
+
 .services .boxs .box {
   background: rgba(255, 255, 255, 0.25);
   border-radius: 16px;
@@ -7,6 +16,10 @@
   border: 1px solid rgba(255, 255, 255, 0.54);
   color: rgb(155, 155, 155);
   width: 30%;
+}
+
+.services .boxs .box > div:nth-child(3) h1 {
+  color: var(--main-color);
 }
 
 @media screen and (max-width: 767px) {

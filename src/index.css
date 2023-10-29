@@ -9,18 +9,16 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    /* outline: 1px solid red; */
   }
   html {
     scroll-behavior: smooth;
     font-family: "Poppins", sans-serif;
-    background: #ffffff;
+    background: var(--text-color);
   }
   ::selection {
     user-select: none;
   }
 
-  /* Works on Chrome, Edge, and Safari */
   *::-webkit-scrollbar {
     width: 2px;
   }
@@ -38,13 +36,4 @@
   --main-color: #ff7598;
   --second-color: #75d1f0;
   --text-color: #fff;
-  --color-h: 207;
-  --color-s: 73%;
-  --color-l: 57%;
-}
-
-[data-theme="dark"] {
-  --main-color: #3f3267;
-  --second-color: #86b9f4;
-  --text-color: #a8a1ba;
 }

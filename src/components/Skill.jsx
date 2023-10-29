@@ -16,7 +16,7 @@ const Skill = () => {
   return (
     <section id="skill" className="skill my-[20px] py-20 ">
       <div className="container mx-auto px-3 max-w-[1100px]">
-        <h1 className="text-secondary text-3xl md:text-4xl text-center m-10 font-bold">
+        <h1 className="title-skill text-3xl md:text-4xl text-center m-10 font-bold">
           Skill
         </h1>
         <div className="mt-[30px] marquee">

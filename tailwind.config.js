@@ -7,11 +7,6 @@ module.exports = {
     fontFamily: {
       signature: ["Noto Nastaliq Urdu"],
     },
-    colors: {
-      white: "#ffffff",
-      primary: "#ff7598",
-      secondary: "#75d1f0",
-    },
   },
   daisyui: {
     themes: ["cyberpunk"],

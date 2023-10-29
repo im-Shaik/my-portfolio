@@ -159,7 +159,7 @@ const Contact = () => {
   return (
     <section id="contact" className="contact mt-[20px] mb-[100px] py-20">
       <div className="container mx-auto px-3 max-w-[1100px]">
-        <h1 className="text-secondary text-3xl md:text-4xl text-center m-10 font-bold">
+        <h1 className="title-contact text-3xl md:text-4xl text-center m-10 font-bold">
           Contact
         </h1>
         <form onSubmit={handleSendEmail}>
